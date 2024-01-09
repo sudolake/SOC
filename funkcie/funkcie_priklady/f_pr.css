@@ -135,9 +135,48 @@ animation-duration: 0.7s;
 .horny-item{
   margin-top:185px;
 }
+
+
+
+.content .priklad-nazov{
+  text-decoration: none;
+  font-size:1.4rem;
+  color:#2d2d49;
+  font-weight: 500;
+}
+
+.content .priklad-description{
+  padding-right: 220px;
+  margin-top:20px;
+  font-size:1rem;
+}
 .skolske-logo{
   position: absolute;
   top:50px;
   right:100px;
   width:9rem;
+}
+
+
+.riesenie-button{
+  padding: 6px 8px 6px 13px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.riesenie-button i{
+  float: right;
+  padding-right: 8px;
+}
+
+.riesenie-dropdown{
+  
 }
