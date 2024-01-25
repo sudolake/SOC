@@ -23,6 +23,7 @@ body {
 }
 
 
+
 .skolske-logo{
 position: absolute;
 top:50px;
@@ -140,4 +141,12 @@ animation-duration: 0.7s;
   top:50px;
   right:100px;
   width:9rem;
+}
+
+.upper-section-margin{
+  margin-top: 50px;
+}
+
+.bottom-text-margin{
+  margin-bottom: 200px;
 }

@@ -133,3 +133,14 @@ animation-duration: 0.7s;
   .horny-item{
     margin-top:185px;
   }
+
+  .upper-section-margin{
+    margin-top: 50px;
+  }
+  
+  .bottom-text-margin{
+    margin-bottom: 200px;
+  }
+  .content h3{
+    font-size: 1.5rem;
+  }
