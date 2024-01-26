@@ -47,7 +47,7 @@ input[type=text] {
 form button{
   padding:8px 20px 8px 20px;
   font-size: 15.5px;
-  background-color: #7677ce;
+  background-color: #176B87;
   color:white;
   border:0;
   
@@ -150,3 +150,6 @@ animation-duration: 0.7s;
 .bottom-text-margin{
   margin-bottom: 200px;
 }
+
+
+footer{margin-top:250px;}
