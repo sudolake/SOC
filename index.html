@@ -20,7 +20,7 @@
         <img src="" alt="">
         <div class="search-container">
             <form action="/search" method="get">
-                <input type="text" placeholder="Search..." name="search">
+                <input type="text" placeholder="Hladať..." name="search">
                 <a href="#"><button type="submit">SEARCH</button></a>
             </form>
         </div>
@@ -30,46 +30,53 @@
 
 <!-- bocny navbar -->
 
-    <div class="sidenav">
+<div class="sidenav">
 
+    <div class="navbar-item horny-item">
+        <a href="../SOC/index.html">
+        <button class="dropdown-btn">Domov</button>
 
-        <div class="navbar-item horny-item">
-        <button class="dropdown-btn">Funkcie<i class="fa fa-caret-down"></i> </button>
-        <div class="dropdown-container">
-          <a href="./funkcie/funkcie_teoria/funkcie_teoria.html">Teória</a>
-          <a href="./funkcie/funkcie_priklady/funkcie_priklady.html">Príklady</a>
-          <a href="#">Video</a>
+        </a>
         </div>
+
+
+    <div class="navbar-item">
+    <button class="dropdown-btn">Funkcie<i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-container">
+      <a href="./funkcie/funkcie_teoria/funkcie_teoria.html">Teória</a>
+      <a href="./funkcie/funkcie_priklady/funkcie_priklady.html">Príklady</a>
+      <a href="#">Video</a>
+    </div>
     </div>
 
-        <div class="navbar-item">
-        <button class="dropdown-btn">Kombinatorika <i class="fa fa-caret-down"></i> </button>
-        <div class="dropdown-container">
-            <a href="./kombinatorika/kombinatorika_teoria/k_teoria.html">Teória</a>
-            <a href="./kombinatorika/kombinatorika_priklady/kombinatorika_priklady.html">Príklady</a>
-            <a href="#">Video</a>
-        </div>
+    <div class="navbar-item">
+    <button class="dropdown-btn">Kombinatorika <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-container">
+        <a href="./kombinatorika/kombinatorika_teoria/k_teoria.html">Teória</a>
+        <a href="./kombinatorika/kombinatorika_priklady/kombinatorika_priklady.html">Príklady</a>
+        <a href="#">Video</a>
+    </div>
+</div>
+
+    <div class="navbar-item">
+    <button class="dropdown-btn">Pravdepodobnosť <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-container">
+        <a href="./pravdepodobnost/pravdepodobnost_teoria/p_teoria.html">Teória</a>
+        <a href="./pravdepodobnost/pravdepodobnost_priklady/pravdepodobnost_priklady.html">Príklady</a>
+        <a href="#">Video</a>
+    </div>
+</div>
+
+    <div class="navbar-item">
+    <button class="dropdown-btn">Štatistika <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-container">
+        <a href="./statistika/statistika_teoria/s_teoria.html">Teória</a>
+        <a href="./statistika/statistika_priklady/statistika_priklady.html">Príklady</a>
+        <a href="#">Video</a>
+    </div>
+    </div>
     </div>
 
-        <div class="navbar-item">
-        <button class="dropdown-btn">Pravdepodobnosť <i class="fa fa-caret-down"></i> </button>
-        <div class="dropdown-container">
-            <a href="./pravdepodobnost/pravdepodobnost_teoria/p_teoria.html">Teória</a>
-            <a href="./pravdepodobnost/pravdepodobnost_priklady/pravdepodobnost_priklady.html">Príklady</a>
-            <a href="#">Video</a>
-        </div>
-    </div>
-
-        <div class="navbar-item">
-        <button class="dropdown-btn">Štatistika <i class="fa fa-caret-down"></i> </button>
-        <div class="dropdown-container">
-            <a href="./statistika/statistika_teoria/s_teoria.html">Teória</a>
-            <a href="./statistika/statistika_priklady/statistika_priklady.html">Príklady</a>
-            <a href="#">Video</a>
-        </div>
-        </div>
-        </div>
-      </div>
 
 
 
@@ -78,7 +85,7 @@
 
 <!-- text sekcia -->
 
-    <div class="content">
+    <div class="sekcia-uvod">
         <h2>Naša stránka</h2>
         <p>Táto stránka poskytuje komplexný výučbový obsah od funkcií po štatistiku, zahŕňajúce rôzne matematické učivá.<br>
 <br>
@@ -101,8 +108,9 @@
             </p>
     </div>
 
+
+
+<footer></footer>
 <script src="script.js"></script>
-
-
 </body>
 </html>

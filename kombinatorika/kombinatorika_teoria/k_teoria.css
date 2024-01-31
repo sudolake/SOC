@@ -1,146 +1,152 @@
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-   
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+ 
+}
+
+.sekcia-uvod {
+margin-left: 350px;
+  margin-top:130px;
+}
+.sekcia-uvod h2{
+  font-weight: 400;
+  font-size:2rem;
+  color:#2d2e47
+}
+.sekcia-uvod p{
+  font-size:1rem;
+  line-height: 30px;
+  padding-right:80px;
 }
 
 
-
-/* Style for the content area to prevent it from overlapping with the navbar */
-.content {
-    margin-left: 470px; /* Adjust this value based on the width of your navbar */
-    margin-top:100px;
+.skolske-logo{
+position: absolute;
+top:50px;
+right:100px;
+width:9rem;
 }
-.content h2{
-    font-weight: 400;
-    font-size:3rem;
-    
-}
-.content p{
-    font-size:1.1rem;
-    line-height: 30px;
-    padding-right:190px;
-}
-
-.content span{
-    display: block;
-    margin-bottom:10px;
-}
-
 
 
 .search-container {
-    text-align: center;
-   
+  text-align: center;
+ 
 }
 
 input[type=text] {
-    margin-top: 20px;
-    font-size: 17px;
-    padding: 8px 250px 8px 20px;
-    border: none;
-    background-color: #e6e6e6;
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 8px 250px 8px 20px;
+  border: none;
+  background-color: #e6e6e6;
 }
 form button{
-    padding:8px 20px 8px 20px;
-    font-size: 15.5px;
-    background-color: #7677ce;
-    color:white;
-    border:0;
-    
+  padding:8px 20px 8px 20px;
+  font-size: 15.5px;
+  background-color: #176B87;
+  color:white;
+  border:0;
+  
 }
 form button:hover{
-    cursor:grab;
+  cursor:grab;
+}
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  
+}
+
+
+.dropdown-container a, .dropdown-btn {
+  padding: 6px 8px 6px 13px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.horny-item a{
+  text-decoration: none;
+}
+
+
+
+.dropdown-btn{
+  margin-top:10px;
+}
+.navbar-item{
+  justify-content: center;
+  margin-bottom:8px;
+}
+@keyframes hoverFade{
+  from {color: #818181;}
+  to {color: #f1f1f1;}
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+animation-name: hoverFade;
+animation-duration: 0.7s;
+  
 }
 
 
 
 
+.active {
+  background-color: rgb(20, 19, 19);
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #1a1a1a;
+  padding-left: 8px;
+
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+.horny-item{
+  margin-top:185px;
+}
+
+
+footer{margin-top:250px;}
+.skolske-logo{
+  position: absolute;
+  top:50px;
+  right:100px;
+  width:9rem;
+}
+
+.upper-section-margin{
+  margin-top: 50px;
+}
+
+.bottom-text-margin{
+  margin-bottom: 200px;
+}
+
+
+footer{margin-top:250px;}
 
 
 
-/* Fixed sidenav, full height */
-.sidenav {
-    height: 100%;
-    width: 220px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    
-  }
-  
-  /* Style the sidenav links and the dropdown button */
-  .sidenav a, .dropdown-btn {
-    padding: 6px 8px 6px 13px;
-    text-decoration: none;
-    font-size: 21px;
-    color: #818181;
-    display: block;
-    border: none;
-    background: none;
-    width:100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-  }
-  .dropdown-btn{
-    margin-top:10px;
-  }
-  .navbar-item{
-    justify-content: center;
-    margin-bottom:8px;
-  }
-  @keyframes hoverFade{
-    from {color: #818181;}
-    to {color: #f1f1f1;}
-  }
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: #f1f1f1;
-animation-name: hoverFade;
-animation-duration: 0.7s;
-    
-  }
-  
-  /* Main content */
-  .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  
-  /* Add an active class to the active dropdown button */
-  .active {
-    background-color: rgb(20, 19, 19);
-    color: white;
-  }
-  
-  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-  .dropdown-container {
-    display: none;
-    background-color: #262626;
-    padding-left: 8px;
-  }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
-  .horny-item{
-    margin-top:185px;
-  }
-
-  .upper-section-margin{
-    margin-top: 50px;
-  }
-  
-  .bottom-text-margin{
-    margin-bottom: 200px;
-  }
 
 
-  footer{margin-top:250px;}

@@ -4,19 +4,16 @@ body {
  
 }
 
-
-
-/* Style for the content area to prevent it from overlapping with the navbar */
-.content {
-  margin-left: 470px; /* Adjust this value based on the width of your navbar */
+.sekcia-uvod {
+margin-left: 400px;
   margin-top:130px;
 }
-.content h2{
+.sekcia-uvod h2{
   font-weight: 400;
   font-size:2rem;
   color:#2d2e47
 }
-.content p{
+.sekcia-uvod p{
   font-size:1rem;
   line-height: 30px;
   padding-right:80px;
@@ -46,7 +43,7 @@ input[type=text] {
 form button{
   padding:8px 20px 8px 20px;
   font-size: 15.5px;
-  background-color: #7677ce;
+  background-color: #176B87;
   color:white;
   border:0;
   
@@ -55,13 +52,6 @@ form button:hover{
   cursor:grab;
 }
 
-
-
-
-
-
-
-/* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
   width: 220px;
@@ -74,8 +64,8 @@ form button:hover{
   
 }
 
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+
+.dropdown-container a, .dropdown-btn {
   padding: 6px 8px 6px 13px;
   text-decoration: none;
   font-size: 21px;
@@ -88,6 +78,12 @@ form button:hover{
   cursor: pointer;
   outline: none;
 }
+.horny-item a{
+  text-decoration: none;
+}
+
+
+
 .dropdown-btn{
   margin-top:10px;
 }
@@ -99,7 +95,7 @@ form button:hover{
   from {color: #818181;}
   to {color: #f1f1f1;}
 }
-/* On mouse-over */
+
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
 animation-name: hoverFade;
@@ -107,27 +103,21 @@ animation-duration: 0.7s;
   
 }
 
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
 
-/* Add an active class to the active dropdown button */
+
+
 .active {
   background-color: rgb(20, 19, 19);
   color: white;
 }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #1a1a1a;
   padding-left: 8px;
+
 }
 
-/* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
   padding-right: 8px;
@@ -137,8 +127,26 @@ animation-duration: 0.7s;
 }
 
 
+.upper-section-margin{
+  margin-top: 50px;
+}
 
-.content .priklad-nazov{
+.bottom-text-margin{
+  margin-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sekcia-uvod .priklad-nazov{
   text-decoration: none;
   font-size:1.4rem;
   color:#2d2d49;
@@ -146,7 +154,7 @@ animation-duration: 0.7s;
   margin-top:50px;
 }
 
-.content .priklad-description{
+.sekcia-uvod .priklad-description{
   padding-right: 220px;
   margin-top:20px;
   margin-bottom: 20px;
@@ -236,6 +244,5 @@ animation-duration: 0.7s;
   width: 100%;
  }
 
-footer{
-  margin-top: 250px;
-}
+
+ footer{margin-top:250px;}
