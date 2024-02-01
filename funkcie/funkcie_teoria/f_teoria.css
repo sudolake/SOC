@@ -1,8 +1,146 @@
+
+@keyframes hoverFade{
+  from {color: #818181;}
+  to {color: #f1f1f1;}
+}
+@keyframes dropdownAnimacia {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+
+
+
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
- 
+  font-family: 'Sen';
+  font-weight: 400;
+  margin-bottom:250px;
+  background-color: #F7FBFC;
+  color:black;
 }
+
+.navbar-sekcia-cela{
+    margin-top: 50px;
+  }
+.navbar-sekcia-cela a{
+  text-decoration: none;
+}
+
+ h3{
+      font-size: 35px;
+      margin-bottom: 30px;
+      text-align: center;
+
+      
+    }
+h3 img{
+  width: 2.5rem;
+  position: relative;
+  top: 7px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+.navbar-sekcia-cela:nth-child(3){
+    margin-top: 200px;
+  }
+
+
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left:0;
+  background-image: linear-gradient(to left, #212A3E, #9BA4B5);
+/* background-color: #9BA4B5; */
+}
+ .dropdown-tlacidlo{
+   /* background: #212A3E; */
+   padding: 23px 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   position: relative;
+   font-size: 20px;
+   perspective: 1000px;
+   z-index: 3;
+   &:hover{
+     background: #475572 ;
+     cursor: pointer;
+   }
+   &:hover .dropdown-menu-tlacidla li{
+     display: block;}}
+   
+
+ .dropdown-menu-tlacidla{
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   perspective: 1000px;
+   z-index: 1;
+   padding-left:0;
+   li{
+    display: none;
+    color: white;
+    background-color: #34495e;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0;
+    &:hover{
+      background-color: #516579;
+    }}}
+  
+    
+.dropdown:hover .dropdown-menu-tlacidla--animated{
+  display: block;}
+
+.dropdown-menu-tlacidla--animated{
+  display: none;
+    li{
+      display: block;
+      opacity: 1
+    }}
+
+
+
+  .dropdown_teoria{
+    transform-origin: top center;
+    animation: dropdownAnimacia 300ms 60ms ease-in-out forwards;
+  }
+  .dropdown_priklady{
+    transform-origin: top center;
+    animation: dropdownAnimacia 300ms 120ms ease-in-out forwards;
+  }
+  .dropdown_video{
+    transform-origin: top center;
+    animation: dropdownAnimacia 300ms 180ms ease-in-out forwards;
+  }
+
+  .skolske-logo{
+    position: absolute;
+    top:25px;
+    right:50px;
+    width:6rem;
+    height:5.5rem;
+  }
+
+
 
 .sekcia-uvod {
 margin-left: 350px;
@@ -20,133 +158,17 @@ margin-left: 350px;
 }
 
 
-.skolske-logo{
-position: absolute;
-top:50px;
-right:100px;
-width:9rem;
-}
 
-
-.search-container {
-  text-align: center;
- 
-}
-
-input[type=text] {
-  margin-top: 20px;
-  font-size: 17px;
-  padding: 8px 250px 8px 20px;
-  border: none;
-  background-color: #e6e6e6;
-}
-form button{
-  padding:8px 20px 8px 20px;
-  font-size: 15.5px;
-  background-color: #176B87;
-  color:white;
-  border:0;
-  
-}
-form button:hover{
-  cursor:grab;
-}
-
-.sidenav {
-  height: 100%;
-  width: 220px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  
-}
-
-
-.dropdown-container a, .dropdown-btn {
-  padding: 6px 8px 6px 13px;
-  text-decoration: none;
-  font-size: 21px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-.horny-item a{
-  text-decoration: none;
-}
-
-
-
-.dropdown-btn{
-  margin-top:10px;
-}
-.navbar-item{
-  justify-content: center;
-  margin-bottom:8px;
-}
-@keyframes hoverFade{
-  from {color: #818181;}
-  to {color: #f1f1f1;}
-}
-
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-animation-name: hoverFade;
-animation-duration: 0.7s;
-  
-}
-
-
-
-
-.active {
-  background-color: rgb(20, 19, 19);
-  color: white;
-}
-
-.dropdown-container {
-  display: none;
-  background-color: #1a1a1a;
-  padding-left: 8px;
-
-}
-
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-.horny-item{
-  margin-top:185px;
-}
-
-
-footer{margin-top:250px;}
-.skolske-logo{
-  position: absolute;
-  top:50px;
-  right:100px;
-  width:9rem;
-}
 
 .upper-section-margin{
   margin-top: 50px;
 }
 
-.bottom-text-margin{
-  margin-bottom: 200px;
+
+
+
+
+
+.monotonne li{
+  margin-bottom: 50px;
 }
-
-
-footer{margin-top:250px;}
-
-
-
-
-
