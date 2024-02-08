@@ -1,7 +1,4 @@
-@keyframes hoverFade{
-  from {color: #818181;}
-  to {color: #f1f1f1;}
-}
+
 @keyframes dropdownAnimacia {
   0% {
     opacity: 0;
@@ -33,12 +30,22 @@ body {
   }
 .navbar-sekcia-cela a{
   text-decoration: none;
+
 }
+
+.navbar-sekcia-cela li{
+  text-decoration: none;
+}
+
+
+
+
 
  h3{
       font-size: 35px;
       margin-bottom: 30px;
       text-align: center;
+      
 
       
     }
@@ -151,34 +158,44 @@ h3 img{
   margin:auto;
   justify-content: center;
   max-width: 1500px;
-  padding-left:400px;
+  padding-left:300px;
 }
 
 .grid-text-sekcia {
   text-align: center;
+  
 }
 
 .grid-fotka-sekcia img {
   max-width: 100%;
+  
   height: auto;
   display: block;
   width:27rem;
+  
 }
 
 
 
 
 
-
+@keyframes uvod-animacia{
+  0% {top: 200px;}
+  100% {top: -50px;}}
 
   .sekcia-uvod {
       margin-top:130px;
       text-align: left;
-      
-      /* padding-left: 20vw;
-      padding-right:10vw; */
-      /* justify-content: center; */
+      position: relative;
+      animation: uvod-animacia;
+      animation-duration: 0.7s;
+      animation-fill-mode: forwards;
   }
+
+
+
+
+
   .sekcia-uvod h2{
       font-weight: 400;
       font-size:2.7rem;

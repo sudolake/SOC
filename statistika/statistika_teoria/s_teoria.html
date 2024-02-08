@@ -4,77 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOC</title>
+    <title>Učebnica MAT - štatistika</title>
     <link rel="stylesheet" href="s_teoria.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600&display=swap" rel="stylesheet">
     <!--  -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../z_fotky/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../z_fotky/favicon-16x16.png">
 
 
 </head>
 <body>
-    <!-- horny search navbar -->
-    <nav>
-        <img src="" alt="">
-        <div class="search-container">
-            <form action="/search" method="get">
-                <input type="text" placeholder="Search..." name="search">
-                <a href="#"><button type="submit">SEARCH</button></a>
-            </form>
-        </div>
-    </nav>
+
+
+    <div class="navbar-sekcia-cela">
+        <h3><img src="../../z_fotky/nazov_ikona.png" alt=""> Elektronická učebnica matematiky <img src="../../z_fotky/nazov_ikona.png" alt=""></h3> <!-- hlavny nazov-->
+        <ul class="navbar"> <!-- navbar(list) -->
     
-    <img class="skolske-logo" src="../../logo_SPSD.jpg" alt="">
-<!-- bocny navbar -->
-
-<div class="sidenav">
-
-    <div class="navbar-item horny-item">
-        <a href="../../index.html">
-        <button class="dropdown-btn">Domov</button>
-
-        </a>
-        </div>
-
-
-    <div class="navbar-item">
-    <button class="dropdown-btn">Funkcie<i class="fa fa-caret-down"></i> </button>
-    <div class="dropdown-container">
-      <a href="../../funkcie/funkcie_teoria/funkcie_teoria.html">Teória</a>
-      <a href="../../funkcie/funkcie_priklady/funkcie_priklady.html">Príklady</a>
-      <a href="#">Video</a>
-    </div>
-    </div>
-
-    <div class="navbar-item">
-    <button class="dropdown-btn">Kombinatorika <i class="fa fa-caret-down"></i> </button>
-    <div class="dropdown-container">
-        <a href="../../kombinatorika/kombinatorika_teoria/k_teoria.html">Teória</a>
-        <a href="../../kombinatorika/kombinatorika_priklady/kombinatorika_priklady.html">Príklady</a>
-        <a href="#">Video</a>
-    </div>
-</div>
-
-    <div class="navbar-item">
-    <button class="dropdown-btn">Pravdepodobnosť <i class="fa fa-caret-down"></i> </button>
-    <div class="dropdown-container">
-        <a href="../../pravdepodobnost/pravdepodobnost_teoria/p_teoria.html">Teória</a>
-        <a href="../../pravdepodobnost/pravdepodobnost_priklady/pravdepodobnost_priklady.html">Príklady</a>
-        <a href="#">Video</a>
-    </div>
-</div>
-
-    <div class="navbar-item">
-    <button class="dropdown-btn">Štatistika <i class="fa fa-caret-down"></i> </button>
-    <div class="dropdown-container">
-        <a href="../../statistika/statistika_teoria/s_teoria.html">Teória</a>
-        <a href="../../statistika/statistika_priklady/statistika_priklady.html">Príklady</a>
-        <a href="#">Video</a>
-    </div>
-    </div>
-    </div>
+            <a href="../../index.html"> <!-- domov tlacidlo-->
+            <li class="dropdown-tlacidlo"> 
+            Domov
+                </li>
+            </a>
+    
+           <li class="dropdown-tlacidlo"><!-- funkcie tlacidlo-->
+            Funkcie
+            <ul class="dropdown-menu-tlacidla">
+              <a href="../../funkcie/funkcie_teoria/funkcie_teoria.html"><li class="dropdown_teoria">Teória</li></a> 
+              <a href="../../funkcie/funkcie_priklady/funkcie_priklady.html"><li class="dropdown_priklady">Príklady</li>
+              <a href="#"><li class="dropdown_video">Video</li></a>
+            </ul>
+          </li>
+          
+          <li class="dropdown-tlacidlo"><!-- kombinatorika tlacidlo-->
+            Kombinatorika
+            <ul class="dropdown-menu-tlacidla">
+              <a href="../../kombinatorika/kombinatorika_teoria/k_teoria.html"><li class="dropdown_teoria">Teória</li></a> 
+              <a href="../../kombinatorika/kombinatorika_priklady/kombinatorika_priklady.html"><li class="dropdown_priklady">Príklady</li>
+              <a href="#"><li class="dropdown_video">Video</li></a>
+            </ul>
+          </li>
+    
+          <li class="dropdown-tlacidlo"><!-- pravdepodobnost tlacidlo-->
+            Pravdepodobnosť
+            <ul class="dropdown-menu-tlacidla">
+              <a href="../../pravdepodobnost/pravdepodobnost_teoria/p_teoria.html"><li class="dropdown_teoria">Teória</li></a> 
+              <a href="../../pravdepodobnost/pravdepodobnost_priklady/pravdepodobnost_priklady.html"><li class="dropdown_priklady">Príklady</li>
+              <a href="#"><li class="dropdown_video">Video</li></a>
+            </ul>
+          </li>
+    
+          <li class="dropdown-tlacidlo"><!-- statistika tlacidlo-->
+            Štatistika
+            <ul class="dropdown-menu-tlacidla">
+              <a href="../../statistika/statistika_teoria/s_teoria.html"><li class="dropdown_teoria">Teória</li></a> 
+              <a href="../../statistika/statistika_priklady/statistika_priklady.html"><li class="dropdown_priklady">Príklady</li>
+              <a href="#"><li class="dropdown_video">Video</li></a>
+            </ul>
+          </li>
+          </ul>
+      </div>
+    
+       <img class="skolske-logo" src="../../z_fotky/logo_SPSD.jpg" alt="">
 
 
 

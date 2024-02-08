@@ -140,11 +140,20 @@ h3 img{
     height:5.5rem;
   }
 
-
+  @keyframes uvod-animacia{
+    0% {top: 200px;}
+    100% {top: -50px;}}
+  
 
 .sekcia-uvod {
-margin-left: 350px;
+margin-left: 250px;
+
   margin-top:130px;
+  text-align: left;
+  position: relative;
+  animation: uvod-animacia;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 .sekcia-uvod h2{
   font-weight: 400;
