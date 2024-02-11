@@ -45,9 +45,6 @@ body {
     }
   }  
 
-  .navbar-sekcia-cela:nth-child(3){
-      margin-top: 200px;
-    }
 
   .navbar{
     display: flex;
@@ -57,7 +54,8 @@ body {
     justify-content: center;
     padding-left:0;
     background-image: linear-gradient(to left, #212A3E, #9BA4B5);
-  /* background-color: #9BA4B5; */
+    /* background-image: linear-gradient(to right, #474F7A, #81689D); */
+    /* background-image: linear-gradient(to right, #6C22A6, #6962AD); */
   }
    .dropdown-tlacidlo{
      /* background: #212A3E; */
@@ -74,9 +72,10 @@ body {
        background: #475572 ;
        cursor: pointer;
      }
-     &:hover .dropdown-menu-tlacidla li{
+     &:hover .dropdown-menu-tlacidla .dropdown_tlacidla{
        display: block;}}
      
+  
    .dropdown-menu-tlacidla{
      position: absolute;
      top: 100%;
@@ -95,6 +94,7 @@ body {
       &:hover{
         background-color: #516579;
       }}}
+    
       
   .dropdown:hover .dropdown-menu-tlacidla--animated{
     display: block;}
@@ -105,6 +105,8 @@ body {
         display: block;
         opacity: 1
       }}
+  
+  
   
     .dropdown_teoria{
       transform-origin: top center;
@@ -118,6 +120,83 @@ body {
       transform-origin: top center;
       animation: dropdownAnimacia 300ms 180ms ease-in-out forwards;
     }
+  
+  
+  
+  /* podsekcie */
+  
+    .dropdown-podtlacidlo{
+      /* background: #212A3E; */
+      padding: 23px 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      font-size: 20px;
+      perspective: 1000px;
+      z-index: 3;
+      &:hover{
+        background: #475572 ;
+        cursor: pointer;
+      }
+      &:hover .dropdown-menu-podtlacidla .dropdown_podtlacidlo{
+        display: block;}}
+  
+    .dropdown-menu-podtlacidla{
+      position: absolute;
+      top: 0%;
+      left: 100%;
+      width: 100%;
+      perspective: 1000px;
+      z-index: 1;
+      padding-left:0;
+      li{
+        display: none;
+        color: white;
+        background-color: #1F2544;
+        padding: 10px 20px;
+        font-size: 16px;
+        opacity: 0;
+        &:hover{
+          background-color: #2D3250;
+        }}}
+  
+       
+        
+        .dropdown-menu-podtlacidla--animated{
+          display: none;
+            li{
+              display: block;
+              opacity: 1
+            }}
+  
+            .podsekcia1{
+              transform-origin: top right;
+              animation: podsekciaAnimacia 300ms 60ms ease-in-out forwards;
+            }
+            .podsekcia2{
+              transform-origin: top right;
+              animation: podsekciaAnimacia 300ms 120ms ease-in-out forwards;
+            }
+            .podsekcia3{
+              transform-origin: top right;
+              animation: podsekciaAnimacia 300ms 180ms ease-in-out forwards;
+            }
+  
+            @keyframes podsekciaAnimacia {
+              0% {
+                opacity: 0;
+                transform: rotateX(-90deg);
+              }
+              50% {
+                transform: rotateX(-20deg);
+              }
+              100% {
+                opacity: 1;
+                transform: rotateX(0deg);
+              }
+            }
   
     .skolske-logo{
       position: absolute;
