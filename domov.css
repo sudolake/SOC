@@ -12,7 +12,23 @@
     transform: rotateX(0deg);
   }
 }
+@keyframes podsekciaAnimacia {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 
+@keyframes uvod-animacia{
+  0% {top: 200px;}
+  100% {top: -50px;}}
 
 
 
@@ -25,23 +41,10 @@ body {
   color:black;
 }
 
-.navbar-sekcia-cela{
-    margin-top: 50px;
-  }
-.navbar-sekcia-cela a{
-  text-decoration: none;
-
-}
-
-.navbar-sekcia-cela li{
-  text-decoration: none;
-}
 
 
 
-
-
- h3{
+ h3{                /* text nad navbarom */
       font-size: 35px;
       margin-bottom: 30px;
       text-align: center;
@@ -49,7 +52,7 @@ body {
 
       
     }
-h3 img{
+h3 img{             /* ikony nad navbarom */
   width: 2.5rem;
   position: relative;
   top: 7px;
@@ -58,18 +61,22 @@ h3 img{
 }
 
 
-/* .navbar-sekcia-cela:nth-child(3){
-    margin-top: 200px;
-  } */
+.navbar-sekcia-cela{
+  margin-top: 50px;
+}
+.navbar-sekcia-cela a{
+text-decoration: none;
 
+}
 
+.navbar-sekcia-cela li{
+text-decoration: none;
+}
+.navbar{ /* navbar lista */
 
-.navbar{
-  display: flex;
   justify-content: center;
   width: 100%;
   display: flex;
-  justify-content: center;
   padding-left:0;
   background-image: linear-gradient(to left, #212A3E, #9BA4B5);
   /* background-image: linear-gradient(to right, #474F7A, #81689D); */
@@ -77,13 +84,15 @@ h3 img{
 }
  .dropdown-tlacidlo{
    /* background: #212A3E; */
-   padding: 23px 55px;
+   /* padding: 23px 55px; */
+   padding: 1.4375rem 3.4375rem;
    display: flex;
    justify-content: center;
    align-items: center;
    color: white;
    position: relative;
-   font-size: 20px;
+   /* font-size: 20px; */
+   font-size: 1.25rem;
    perspective: 1000px;
    z-index: 3;
    &:hover{
@@ -106,13 +115,15 @@ h3 img{
     display: none;
     color: white;
     background-color: #34495e;
-    padding: 10px 20px;
-    font-size: 16px;
+    /* padding: 10px 20px; */
+    /* font-size: 16px; */
+    padding: 0.625rem 1.25rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
     opacity: 0;
     &:hover{
       background-color: #516579;
     }}}
-  
+
     
 .dropdown:hover .dropdown-menu-tlacidla--animated{
   display: block;}
@@ -123,8 +134,6 @@ h3 img{
       display: block;
       opacity: 1
     }}
-
-
 
   .dropdown_teoria{
     transform-origin: top center;
@@ -140,8 +149,6 @@ h3 img{
   }
 
 
-
-/* podsekcie */
 
   .dropdown-podtlacidlo{
     /* background: #212A3E; */
@@ -179,9 +186,6 @@ h3 img{
       &:hover{
         background-color: #2D3250;
       }}}
-
-     
-      
       .dropdown-menu-podtlacidla--animated{
         display: none;
           li{
@@ -201,45 +205,10 @@ h3 img{
             transform-origin: top right;
             animation: podsekciaAnimacia 300ms 180ms ease-in-out forwards;
           }
-
-          @keyframes podsekciaAnimacia {
-            0% {
-              opacity: 0;
-              transform: rotateX(-90deg);
-            }
-            50% {
-              transform: rotateX(-20deg);
-            }
-            100% {
-              opacity: 1;
-              transform: rotateX(0deg);
-            }
+          .podsekcia4{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 240ms ease-in-out forwards;
           }
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .skolske-logo{
     position: absolute;
@@ -279,10 +248,6 @@ h3 img{
 
 
 
-@keyframes uvod-animacia{
-  0% {top: 200px;}
-  100% {top: -50px;}}
-
   .sekcia-uvod {
       margin-top:130px;
       text-align: left;
@@ -291,11 +256,6 @@ h3 img{
       animation-duration: 0.7s;
       animation-fill-mode: forwards;
   }
-
-
-
-
-
   .sekcia-uvod h2{
       font-weight: 400;
       font-size:2.7rem;
@@ -307,3 +267,36 @@ h3 img{
       padding-right:80px;
   }
   /* /SEKCIA UVOD */
+  @media screen and (min-width:10px) and (max-width:1550px){
+    .grid-container {
+
+      grid-template-columns: 1fr 1fr;
+      max-width: 1500px;
+      padding-left:210px;
+    }
+    .grid-fotka-sekcia img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      width:27rem;
+      
+    }
+    .sekcia-uvod {
+      margin-top:130px;
+      text-align: left;
+      position: relative;
+      animation: uvod-animacia;
+      animation-duration: 0.7s;
+      animation-fill-mode: forwards;
+  }
+  .sekcia-uvod h2{
+      font-weight: 400;
+      font-size:2.7rem;
+      color:#2d2e47
+  }
+  .sekcia-uvod p{
+      font-size:1rem;
+      line-height: 30px;
+      padding-right:80px;
+  }
+  }
