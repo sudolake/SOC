@@ -209,6 +209,10 @@ text-decoration: none;
             transform-origin: top right;
             animation: podsekciaAnimacia 300ms 240ms ease-in-out forwards;
           }
+          .podsekcia5{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 300ms ease-in-out forwards;
+          }
 
   .skolske-logo{
     position: absolute;
