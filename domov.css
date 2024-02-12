@@ -37,6 +37,7 @@ body {
   font-family: 'Sen';
   font-weight: 400;
   
+  
   background-color: #F7FBFC;
   color:black;
 
@@ -44,31 +45,31 @@ body {
 }
 
 footer{
-  margin-top:250px;
+  margin-top:12.5vw;
 }
 
 
 
 
  h3{                /* text nad navbarom */
-      font-size: 35px;
-      margin-bottom: 30px;
+      font-size: 2vw;
+      margin-bottom: 1.5vw;
       text-align: center;
       
 
       
     }
 h3 img{             /* ikony nad navbarom */
-  width: 2.5rem;
+  width: 2.5vw;
   position: relative;
-  top: 7px;
-  margin-left:10px;
-  margin-right:10px;
+  top: 0.35000000000000003vw;
+  margin-left:0.5vw;
+  margin-right:0.5vw;
 }
 
 
 .navbar-sekcia-cela{
-  margin-top: 50px;
+  margin-top: 2.5vw;
 }
 .navbar-sekcia-cela a{
 text-decoration: none;
@@ -89,16 +90,15 @@ text-decoration: none;
 
 }
  .dropdown-tlacidlo{
-   /* background: #212A3E; */
-   /* padding: 23px 55px; */
-   padding: 1.4375rem 3.4375rem;
+
+   padding: 1.15vw 2.75vw;
    display: flex;
    justify-content: center;
    align-items: center;
    color: white;
    position: relative;
-   /* font-size: 20px; */
-   font-size: 1.25rem;
+
+   font-size: 1vw;
    perspective: 1000px;
    z-index: 3;
    &:hover{
@@ -121,10 +121,9 @@ text-decoration: none;
     display: none;
     color: white;
     background-color: #34495e;
-    /* padding: 10px 20px; */
-    /* font-size: 16px; */
-    padding: 0.625rem 1.25rem; /* Adjust padding */
-    font-size: 1rem; /* Adjust font size */
+
+    padding: 0.5vw 1vw; /* Adjust padding */
+    font-size: 0.8vw; /* Adjust font size */
     opacity: 0;
     &:hover{
       background-color: #516579;
@@ -158,13 +157,13 @@ text-decoration: none;
 
   .dropdown-podtlacidlo{
     /* background: #212A3E; */
-    padding: 23px 55px;
+    padding: 1.15vw 2.75vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     position: relative;
-    font-size: 20px;
+    font-size: 1vw;
     perspective: 1000px;
     z-index: 3;
     &:hover{
@@ -186,8 +185,8 @@ text-decoration: none;
       display: none;
       color: white;
       background-color: #1F2544;
-      padding: 10px 20px;
-      font-size: 16px;
+      padding: 0.5vw 1vw;
+      font-size: 0.8vw;
       opacity: 0;
       &:hover{
         background-color: #2D3250;
@@ -222,10 +221,10 @@ text-decoration: none;
 
   .skolske-logo{
     position: absolute;
-    top:25px;
-    right:50px;
-    width:6rem;
-    height:5.7rem;
+    top:1.25vw;
+    right:2.5vw;
+    width:4.8vw;
+    height:4.56vw;
   }
 
 
@@ -236,8 +235,9 @@ text-decoration: none;
   align-items: center;
   margin:auto;
   justify-content: center;
-  max-width: 1500px;
-  padding-left:300px;
+  max-width: 75vw;
+  padding-left:15vw;
+
 }
 
 .grid-text-sekcia {
@@ -250,63 +250,74 @@ text-decoration: none;
   
   height: auto;
   display: block;
-  width:27rem;
+  width:21.6vw;
   
 }
 
 
-
+.zdroje{
+  float: right; margin-right:2vw; margin-bottom:2vw; font-size: 1vw;
+}
 
 
   .sekcia-uvod {
-      margin-top:130px;
+
       text-align: left;
-      position: relative;
+  
       animation: uvod-animacia;
       animation-duration: 0.7s;
       animation-fill-mode: forwards;
   }
   .sekcia-uvod h2{
       font-weight: 400;
-      font-size:2.7rem;
+      font-size:2.16vw;
       color:#2d2e47
   }
   .sekcia-uvod p{
-      font-size:1rem;
-      line-height: 30px;
-      padding-right:80px;
+      font-size:0.8vw;
+      line-height: 1.5vw;
+      padding-right:4vw;
   }
   /* /SEKCIA UVOD */
-  @media screen and (min-width:10px) and (max-width:1550px){
-    .grid-container {
 
-      grid-template-columns: 1fr 1fr;
-      max-width: 1500px;
-      padding-left:210px;
-    }
+
+  @media screen and (min-width:1px) and (max-width:780px){
+
     .grid-fotka-sekcia img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      width:27rem;
-      
-    }
-    .sekcia-uvod {
-      margin-top:130px;
-      text-align: left;
-      position: relative;
-      animation: uvod-animacia;
-      animation-duration: 0.7s;
-      animation-fill-mode: forwards;
-  }
+    width:30vw;
+}
   .sekcia-uvod h2{
-      font-weight: 400;
-      font-size:2.7rem;
-      color:#2d2e47
-  }
-  .sekcia-uvod p{
-      font-size:1rem;
-      line-height: 30px;
-      padding-right:80px;
-  }
-  }
+    font-size:3.5vw;
+}
+.sekcia-uvod p{
+    font-size:1.3vw;
+    line-height: 2vw;
+}
+h3{               
+  font-size: 2vw;
+
+}
+.grid-container {
+  padding-left:5vw;
+}
+h3{            
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  
+}
+.dropdown-tlacidlo{
+
+  padding: 1.15vw 2.75vw;
+  font-size: 1.5vw;
+}
+.dropdown-menu-tlacidla{
+  li{
+   padding: 1.1vw 1vw;
+   font-size: 1.1vw;}}
+
+
+.dropdown-podtlacidlo{
+  padding: 1.1vw 1vw;
+   font-size: 1vw;
+}}
+  

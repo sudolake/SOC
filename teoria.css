@@ -1,231 +1,231 @@
+
+@keyframes dropdownAnimacia {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@keyframes podsekciaAnimacia {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes uvod-animacia{
+  0% {top: 200px;}
+  100% {top: -50px;}}
+
+
+
 body {
-    margin: 0;
-    font-family: 'Sen';
-    font-weight: 400;
-    margin-bottom:250px;
-    background-color: #F7FBFC;
-    color:black;
-  }
+  margin: 0;
+  font-family: 'Sen';
+  font-weight: 400;
   
+  
+  background-color: #F7FBFC;
+  color:black;
 
 
-  /* navbar */
-  .navbar-sekcia-cela{
-      margin-top: 50px;
+}
+
+footer{
+  margin-top:12.5vw;
+}
+
+
+
+
+ h3{                /* text nad navbarom */
+      font-size: 2vw;
+      margin-bottom: 1.5vw;
+      text-align: center;
+      
+
+      
     }
+h3 img{             /* ikony nad navbarom */
+  width: 2.5vw;
+  position: relative;
+  top: 0.35000000000000003vw;
+  margin-left:0.5vw;
+  margin-right:0.5vw;
+}
 
-  .navbar-sekcia-cela a{
-    text-decoration: none;
+
+.navbar-sekcia-cela{
+  margin-top: 2.5vw;
+}
+.navbar-sekcia-cela a{
+text-decoration: none;
+
+}
+
+.navbar-sekcia-cela li{
+text-decoration: none;
+}
+.navbar{ /* navbar lista */
+
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  padding-left:0;
+  background-image: linear-gradient(to right, #492E87, #0A1D56);
+
+
+}
+ .dropdown-tlacidlo{
+
+   padding: 1.15vw 2.75vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   position: relative;
+
+   font-size: 1vw;
+   perspective: 1000px;
+   z-index: 3;
+   &:hover{
+     background: #20305f ;
+     cursor: pointer;
+   }
+   &:hover .dropdown-menu-tlacidla .dropdown_tlacidla{
+     display: block;}}
+   
+
+ .dropdown-menu-tlacidla{
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   perspective: 1000px;
+   z-index: 1;
+   padding-left:0;
+   li{
+    display: none;
+    color: white;
+    background-color: #34495e;
+
+    padding: 0.5vw 1vw; /* Adjust padding */
+    font-size: 0.8vw; /* Adjust font size */
+    opacity: 0;
+    &:hover{
+      background-color: #516579;
+    }}}
+
+    
+.dropdown:hover .dropdown-menu-tlacidla--animated{
+  display: block;}
+
+.dropdown-menu-tlacidla--animated{
+  display: none;
+    li{
+      display: block;
+      opacity: 1
+    }}
+
+  .dropdown_teoria{
+    transform-origin: top center;
+    animation: dropdownAnimacia 300ms 60ms ease-in-out forwards;
   }
-  
-   .navbar-sekcia-cela h3{
-        font-size: 35px;
-        margin-bottom: 30px;
-        text-align: center;   
-      }
-  h3 img{
-    width: 2.5rem;
+  .dropdown_priklady{
+    transform-origin: top center;
+    animation: dropdownAnimacia 300ms 120ms ease-in-out forwards;
+  }
+  .dropdown_video{
+    transform-origin: top center;
+    animation: dropdownAnimacia 300ms 180ms ease-in-out forwards;
+  }
+
+
+
+  .dropdown-podtlacidlo{
+    /* background: #212A3E; */
+    padding: 1.15vw 2.75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     position: relative;
-    top: 7px;
-    margin-left:10px;
-    margin-right:10px;
-  }
-  
-  @keyframes dropdownAnimacia {
-    0% {
-      opacity: 0;
-      transform: rotateX(-90deg);
+    font-size: 1vw;
+    perspective: 1000px;
+    z-index: 3;
+    &:hover{
+      background: #475572 ;
+      cursor: pointer;
     }
-    50% {
-      transform: rotateX(-20deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotateX(0deg);
-    }
-  }  
+    &:hover .dropdown-menu-podtlacidla .dropdown_podtlacidlo{
+      display: block;}}
 
-
-  .navbar{
-    display: flex;
-    justify-content: center;
+  .dropdown-menu-podtlacidla{
+    position: absolute;
+    top: 0%;
+    left: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    perspective: 1000px;
+    z-index: 1;
     padding-left:0;
-    background-image: linear-gradient(to right, #492E87, #0A1D56);
-
-  }
-   .dropdown-tlacidlo{
-     /* background: #212A3E; */
-     padding: 23px 55px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     position: relative;
-     font-size: 20px;
-     perspective: 1000px;
-     z-index: 3;
-     &:hover{
-      background: #20305f ;
-       cursor: pointer;
-     }
-     &:hover .dropdown-menu-tlacidla .dropdown_tlacidla{
-       display: block;}}
-     
-      .margin-top-30{
-        margin-top:30px;
-      }
-   .dropdown-menu-tlacidla{
-     position: absolute;
-     top: 100%;
-     left: 0;
-     width: 100%;
-     perspective: 1000px;
-     z-index: 1;
-     padding-left:0;
-     li{
+    li{
       display: none;
       color: white;
-      background-color: #34495e;
-      padding: 10px 20px;
-      font-size: 16px;
+      background-color: #1F2544;
+      padding: 0.5vw 1vw;
+      font-size: 0.8vw;
       opacity: 0;
       &:hover{
-        background-color: #516579;
+        background-color: #2D3250;
       }}}
-    
-      
-  .dropdown:hover .dropdown-menu-tlacidla--animated{
-    display: block;}
-  
-  .dropdown-menu-tlacidla--animated{
-    display: none;
-      li{
-        display: block;
-        opacity: 1
-      }}
-  
-      @keyframes dropdownAnimacia {
-        0% {
-          opacity: 0;
-          transform: rotateX(-90deg);
-        }
-        50% {
-          transform: rotateX(-20deg);
-        }
-        100% {
-          opacity: 1;
-          transform: rotateX(0deg);
-        }
-      }  
-  
-    .dropdown_teoria{
-      transform-origin: top center;
-      animation: dropdownAnimacia 300ms 60ms ease-in-out forwards;
-    }
-    .dropdown_priklady{
-      transform-origin: top center;
-      animation: dropdownAnimacia 300ms 120ms ease-in-out forwards;
-    }
-    .dropdown_video{
-      transform-origin: top center;
-      animation: dropdownAnimacia 300ms 180ms ease-in-out forwards;
-    }
-  
-  
-  
-  /* podsekcie */
-  
-    .dropdown-podtlacidlo{
-      /* background: #212A3E; */
-      padding: 23px 55px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      position: relative;
-      font-size: 20px;
-      perspective: 1000px;
-      z-index: 3;
-      &:hover{
-        background: #475572 ;
-        cursor: pointer;
-      }
-      &:hover .dropdown-menu-podtlacidla .dropdown_podtlacidlo{
-        display: block;}}
-  
-    .dropdown-menu-podtlacidla{
-      position: absolute;
-      top: 0%;
-      left: 100%;
-      width: 100%;
-      perspective: 1000px;
-      z-index: 1;
-      padding-left:0;
-      li{
+      .dropdown-menu-podtlacidla--animated{
         display: none;
-        color: white;
-        background-color: #1F2544;
-        padding: 10px 20px;
-        font-size: 16px;
-        opacity: 0;
-        &:hover{
-          background-color: #2D3250;
-        }}}
-  
-       
-        
-        .dropdown-menu-podtlacidla--animated{
-          display: none;
-            li{
-              display: block;
-              opacity: 1
-            }}
-  
-            .podsekcia1{
-              transform-origin: top right;
-              animation: podsekciaAnimacia 300ms 60ms ease-in-out forwards;
-            }
-            .podsekcia2{
-              transform-origin: top right;
-              animation: podsekciaAnimacia 300ms 120ms ease-in-out forwards;
-            }
-            .podsekcia3{
-              transform-origin: top right;
-              animation: podsekciaAnimacia 300ms 180ms ease-in-out forwards;
-            }
-            .podsekcia4{
-              transform-origin: top right;
-              animation: podsekciaAnimacia 300ms 240ms ease-in-out forwards;
-            }
-            .podsekcia5{
-              transform-origin: top right;
-              animation: podsekciaAnimacia 300ms 300ms ease-in-out forwards;
-            }
-  
-            @keyframes podsekciaAnimacia {
-              0% {
-                opacity: 0;
-                transform: rotateX(-90deg);
-              }
-              50% {
-                transform: rotateX(-20deg);
-              }
-              100% {
-                opacity: 1;
-                transform: rotateX(0deg);
-              }
-            }
-  
-    .skolske-logo{
-      position: absolute;
-      top:25px;
-      right:50px;
-      width:6rem;
-      height:5.5rem;
-    }
+          li{
+            display: block;
+            opacity: 1
+          }}
+
+          .podsekcia1{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 60ms ease-in-out forwards;
+          }
+          .podsekcia2{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 120ms ease-in-out forwards;
+          }
+          .podsekcia3{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 180ms ease-in-out forwards;
+          }
+          .podsekcia4{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 240ms ease-in-out forwards;
+          }
+          .podsekcia5{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 300ms ease-in-out forwards;
+          }
+
+  .skolske-logo{
+    position: absolute;
+    top:1.25vw;
+    right:2.5vw;
+    width:4.8vw;
+    height:4.56vw;
+  }
 /* /navbar */
 
 /* teoria - text */
@@ -233,29 +233,50 @@ body {
       0% {top: 200px;}
       100% {top: -50px;}}
     
-  .sekcia-uvod {
-    margin-left: 250px;
-    margin-top:130px;
-    text-align: left;
-    position: relative;
-    animation: uvod-animacia;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
-  }
-  .sekcia-uvod h2{
-    font-weight: 400;
-    font-size:2rem;
-    color:#2d2e47
-  }
-  .sekcia-uvod p{
-    font-size:1rem;
-    line-height: 30px;
-    padding-right:80px;
-  }
+      .sekcia-uvod {
 
-  .important-text{
+        text-align: left;
+        margin-left:10vw;
+        margin-right:3vw;
+        animation: uvod-animacia;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+    }
+    .sekcia-uvod h2{
+        font-weight: 400;
+        font-size:1.8vw;
+        color:#2d2e47
+    }
+    .sekcia-uvod p{
+        font-size:1vw;
+        line-height: 2vw;
+        padding-right:4vw;
+    }
+    
+.sekcia-uvod img{
+  width:8vw;
+}
+.sekcia-uvod .smaller-img{
+  width:5vw;
+}
+.sekcia-uvod .tiny-img{
+  width:2vw;
+}
+
+.sekcia-uvod .big-img{
+  width:15vw;
+}
+.sekcia-uvod .med-img{
+  width:10vw;
+}
+
+
+.important-text{
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 0.96vw;
+  }
+  ul li{
+    font-size:0.88vw;
   }
   
   .upper-section-margin{
@@ -265,4 +286,33 @@ body {
   .monotonne li{
     margin-bottom: 50px;
   }
+  @media screen and (min-width:1px) and (max-width:780px){
+
+
+
+h3{               
+  font-size: 2vw;
+
+}
+
+h3{            
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  
+}
+.dropdown-tlacidlo{
+
+  padding: 1.15vw 2.75vw;
+  font-size: 1.5vw;
+}
+.dropdown-menu-tlacidla{
+  li{
+   padding: 1.1vw 1vw;
+   font-size: 1.1vw;}}
+
+
+.dropdown-podtlacidlo{
+  padding: 1.1vw 1vw;
+   font-size: 1vw;
+}}
   

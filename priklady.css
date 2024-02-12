@@ -1,75 +1,108 @@
+
+@keyframes dropdownAnimacia {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@keyframes podsekciaAnimacia {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes uvod-animacia{
+  0% {top: 200px;}
+  100% {top: -50px;}}
+
+
+
 body {
-    margin: 0;
-    font-family: 'Sen';
-    font-weight: 400;
-    margin-bottom:250px;
-    background-color: #F7FBFC;
-    color:black;
-  }
+  margin: 0;
+  font-family: 'Sen';
+  font-weight: 400;
   
   
-  
-  /* navbar */
-  .navbar-sekcia-cela{
-      margin-top: 50px;
+  background-color: #F7FBFC;
+  color:black;
+
+
+}
+
+footer{
+  margin-top:12.5vw;
+}
+
+
+
+
+ h3{                /* text nad navbarom */
+      font-size: 1.2vw;
+      margin-bottom: 1.5vw;
+      text-align: center;
+      
+
+      
     }
-  
-  .navbar-sekcia-cela a{
-    text-decoration: none;
-  }
-  
-   .navbar-sekcia-cela h3{
-        font-size: 35px;
-        margin-bottom: 30px;
-        text-align: center;   
-      }
-  h3 img{
-    width: 2.5rem;
-    position: relative;
-    top: 7px;
-    margin-left:10px;
-    margin-right:10px;
-  }
-  
-  @keyframes dropdownAnimacia {
-    0% {
-      opacity: 0;
-      transform: rotateX(-90deg);
-    }
-    50% {
-      transform: rotateX(-20deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotateX(0deg);
-    }
-  }  
-  
-  
-.navbar{
-  display: flex;
+h3 img{             /* ikony nad navbarom */
+  width: 2.5vw;
+  position: relative;
+  top: 0.35000000000000003vw;
+  margin-left:0.5vw;
+  margin-right:0.5vw;
+}
+
+
+.navbar-sekcia-cela{
+  margin-top: 2.5vw;
+}
+.navbar-sekcia-cela a{
+text-decoration: none;
+
+}
+
+.navbar-sekcia-cela li{
+text-decoration: none;
+}
+.navbar{ /* navbar lista */
+
   justify-content: center;
   width: 100%;
   display: flex;
-  justify-content: center;
   padding-left:0;
   background-image: linear-gradient(to right, #492E87, #0A1D56);
-  /* background-image: linear-gradient(to right, #474F7A, #81689D); */
-  /* background-image: linear-gradient(to right, #6C22A6, #6962AD); */
+
+
 }
  .dropdown-tlacidlo{
-   /* background: #212A3E; */
-   padding: 23px 55px;
+
+   padding: 1.15vw 2.75vw;
    display: flex;
    justify-content: center;
    align-items: center;
    color: white;
    position: relative;
-   font-size: 20px;
+
+   font-size: 1vw;
    perspective: 1000px;
    z-index: 3;
    &:hover{
-     background: #20305f ; 
+     background: #20305f ;
      cursor: pointer;
    }
    &:hover .dropdown-menu-tlacidla .dropdown_tlacidla{
@@ -88,13 +121,14 @@ body {
     display: none;
     color: white;
     background-color: #34495e;
-    padding: 10px 20px;
-    font-size: 16px;
+
+    padding: 0.5vw 1vw; /* Adjust padding */
+    font-size: 0.8vw; /* Adjust font size */
     opacity: 0;
     &:hover{
       background-color: #516579;
     }}}
-  
+
     
 .dropdown:hover .dropdown-menu-tlacidla--animated{
   display: block;}
@@ -105,8 +139,6 @@ body {
       display: block;
       opacity: 1
     }}
-
-
 
   .dropdown_teoria{
     transform-origin: top center;
@@ -123,17 +155,15 @@ body {
 
 
 
-/* podsekcie */
-
   .dropdown-podtlacidlo{
     /* background: #212A3E; */
-    padding: 23px 55px;
+    padding: 1.15vw 2.75vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     position: relative;
-    font-size: 20px;
+    font-size: 1vw;
     perspective: 1000px;
     z-index: 3;
     &:hover{
@@ -155,15 +185,12 @@ body {
       display: none;
       color: white;
       background-color: #1F2544;
-      padding: 10px 20px;
-      font-size: 16px;
+      padding: 0.5vw 1vw;
+      font-size: 0.8vw;
       opacity: 0;
       &:hover{
         background-color: #2D3250;
       }}}
-
-     
-      
       .dropdown-menu-podtlacidla--animated{
         display: none;
           li{
@@ -192,39 +219,16 @@ body {
             animation: podsekciaAnimacia 300ms 300ms ease-in-out forwards;
           }
 
-          @keyframes podsekciaAnimacia {
-            0% {
-              opacity: 0;
-              transform: rotateX(-90deg);
-            }
-            50% {
-              transform: rotateX(-20deg);
-            }
-            100% {
-              opacity: 1;
-              transform: rotateX(0deg);
-            }
-          }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .skolske-logo{
-      position: absolute;
-      top:25px;
-      right:50px;
-      width:6rem;
-      height:5.5rem;
-    }
+  .skolske-logo{
+    position: absolute;
+    top:1.25vw;
+    right:2.5vw;
+    width:4.8vw;
+    height:4.56vw;
+  }
+  .sekcia-uvod img{
+    width:20vw;
+  }
   /* /navbar */
   
   /* priklady - text */
@@ -232,25 +236,24 @@ body {
       0% {top: 200px;}
       100% {top: -50px;}}
     
-  .sekcia-uvod {
-    margin-left: 450px;
-    margin-top:130px;
-    text-align: left;
-    position: relative;
-    animation: uvod-animacia;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
-  }
-  .sekcia-uvod h2{
-    font-weight: 400;
-    font-size:2rem;
-    color:#2d2e47
-  }
-  .sekcia-uvod p{
-    font-size:1rem;
-    line-height: 30px;
-    padding-right:80px;
-  }
+      .sekcia-uvod {
+
+        text-align: left;
+        margin-left:20vw;
+        animation: uvod-animacia;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+    }
+    .sekcia-uvod h2{
+        font-weight: 400;
+        font-size:2.16vw;
+        color:#2d2e47
+    }
+    .sekcia-uvod p{
+        font-size:0.8vw;
+        line-height: 1.5vw;
+        padding-right:4vw;
+    }
   
   .upper-section-margin{
     margin-top: 50px;
@@ -263,25 +266,25 @@ body {
   
   .sekcia-uvod .priklad-nazov{
     text-decoration: none;
-    font-size:1.4rem;
+    font-size:1.1199999999999999vw;
     color:#2d2d49;
     font-weight: 500;
-    margin-top:50px;
+    margin-top:2.5vw;
   }
   
   .sekcia-uvod .priklad-description{
-    padding-right: 220px;
-    margin-top:20px;
-    margin-bottom: 20px;
-    font-size:1rem;
+
+    margin-top:1vw;
+    margin-bottom: 1vw;
+    font-size:0.8vw;
   }
   
   
   
   .riesenie-button{
-    padding: 6px 8px 6px 13px;
+    padding: 0.3vw 0.4vw 0.8vw 0.65vw;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 1.05vw;
     color: #818181;
     display: block;
     border: none;
@@ -294,7 +297,7 @@ body {
   
   .riesenie-button i{
     float: right;
-    padding-right: 8px;
+    padding-right: 0.4vw;
   }
   
   .hidden{
@@ -306,12 +309,12 @@ body {
   
   .visible{
     display: block;
-    margin-bottom:80px;
+    margin-bottom:4vw;
   
   }
   
   .button-riesenie {
-    padding: 10px 25px;
+    padding: 0.5vw 1.25vw;
     border: unset;
     border-radius: 0px;
     color: #212121;
@@ -319,13 +322,13 @@ body {
     background: #e8e8e8;
     position: relative;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 0.8vw;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
-    margin-bottom: 40px;
-    margin-top:30px;
+    margin-bottom: 2vw;
+    margin-top:1.5vw;
    }
    
    .button-riesenie::before {
@@ -351,3 +354,37 @@ body {
     width: 100%;
    }
   /* /sekcia priklady */
+
+
+
+  @media screen and (min-width:1px) and (max-width:780px){
+
+
+
+
+h3{               
+  font-size: 2vw;
+
+}
+
+h3{            
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  
+}
+.dropdown-tlacidlo{
+
+  padding: 1.15vw 2.75vw;
+  font-size: 1.5vw;
+}
+.dropdown-menu-tlacidla{
+  li{
+   padding: 1.1vw 1vw;
+   font-size: 1.1vw;}}
+
+
+.dropdown-podtlacidlo{
+  padding: 1.1vw 1vw;
+   font-size: 1vw;
+}}
+  
