@@ -36,9 +36,15 @@ body {
   margin: 0;
   font-family: 'Sen';
   font-weight: 400;
-  margin-bottom:250px;
+  
   background-color: #F7FBFC;
   color:black;
+
+
+}
+
+footer{
+  margin-top:250px;
 }
 
 
@@ -78,9 +84,9 @@ text-decoration: none;
   width: 100%;
   display: flex;
   padding-left:0;
-  background-image: linear-gradient(to left, #212A3E, #9BA4B5);
-  /* background-image: linear-gradient(to right, #474F7A, #81689D); */
-  /* background-image: linear-gradient(to right, #6C22A6, #6962AD); */
+  background-image: linear-gradient(to right, #492E87, #0A1D56);
+
+
 }
  .dropdown-tlacidlo{
    /* background: #212A3E; */
@@ -96,7 +102,7 @@ text-decoration: none;
    perspective: 1000px;
    z-index: 3;
    &:hover{
-     background: #475572 ;
+     background: #20305f ;
      cursor: pointer;
    }
    &:hover .dropdown-menu-tlacidla .dropdown_tlacidla{

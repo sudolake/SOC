@@ -53,9 +53,8 @@ body {
     display: flex;
     justify-content: center;
     padding-left:0;
-    background-image: linear-gradient(to left, #212A3E, #9BA4B5);
-    /* background-image: linear-gradient(to right, #474F7A, #81689D); */
-    /* background-image: linear-gradient(to right, #6C22A6, #6962AD); */
+    background-image: linear-gradient(to right, #492E87, #0A1D56);
+
   }
    .dropdown-tlacidlo{
      /* background: #212A3E; */
@@ -69,7 +68,7 @@ body {
      perspective: 1000px;
      z-index: 3;
      &:hover{
-       background: #475572 ;
+      background: #20305f ;
        cursor: pointer;
      }
      &:hover .dropdown-menu-tlacidla .dropdown_tlacidla{
@@ -252,6 +251,11 @@ body {
     font-size:1rem;
     line-height: 30px;
     padding-right:80px;
+  }
+
+  .important-text{
+    font-weight: 800;
+    font-size: 1.2rem;
   }
   
   .upper-section-margin{
