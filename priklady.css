@@ -183,6 +183,14 @@ body {
             transform-origin: top right;
             animation: podsekciaAnimacia 300ms 180ms ease-in-out forwards;
           }
+          .podsekcia4{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 240ms ease-in-out forwards;
+          }
+          .podsekcia5{
+            transform-origin: top right;
+            animation: podsekciaAnimacia 300ms 300ms ease-in-out forwards;
+          }
 
           @keyframes podsekciaAnimacia {
             0% {
