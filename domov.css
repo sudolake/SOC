@@ -115,7 +115,7 @@ text-decoration: none;
    left: 0;
    width: 100%;
    perspective: 1000px;
-   z-index: 1;
+   z-index: -1;
    padding-left:0;
    li{
     display: none;
@@ -131,7 +131,9 @@ text-decoration: none;
 
     
 .dropdown:hover .dropdown-menu-tlacidla--animated{
-  display: block;}
+  display: block;
+  z-index: 3;
+}
 
 .dropdown-menu-tlacidla--animated{
   display: none;
@@ -165,13 +167,15 @@ text-decoration: none;
     position: relative;
     font-size: 1vw;
     perspective: 1000px;
-    z-index: 3;
+    z-index: -1;
     &:hover{
       background: #475572 ;
       cursor: pointer;
     }
     &:hover .dropdown-menu-podtlacidla .dropdown_podtlacidlo{
-      display: block;}}
+      display: block;
+      z-index: 3;
+    }}
 
 
 
