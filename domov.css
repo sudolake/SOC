@@ -173,6 +173,10 @@ text-decoration: none;
     &:hover .dropdown-menu-podtlacidla .dropdown_podtlacidlo{
       display: block;}}
 
+
+
+      
+
   .dropdown-menu-podtlacidla{
     position: absolute;
     top: 0%;
@@ -280,7 +284,7 @@ text-decoration: none;
   }
   /* /SEKCIA UVOD */
 
-/* 
+
   @media screen and (min-width:1px) and (max-width:780px){
 
     .grid-fotka-sekcia img {
@@ -320,4 +324,4 @@ h3{
   padding: 1.1vw 1vw;
    font-size: 1vw;
 }}
-   */
+  
