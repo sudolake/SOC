@@ -123,7 +123,7 @@ text-decoration: none;
     background-color: #34495e;
 
     padding: 0.5vw 1vw; /* Adjust padding */
-    font-size: 0.8vw; /* Adjust font size */
+      font-size: 11vw; /* Adjust font size */
     opacity: 0;
     &:hover{
       background-color: #516579;
