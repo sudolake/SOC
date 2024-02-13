@@ -59,6 +59,9 @@ footer{
 
       
     }
+    .navbar-sekcia-cela:nth-child(3){
+    margin-top: 200px;}
+
 h3 img{             /* ikony nad navbarom */
   width: 2.5vw;
   position: relative;
