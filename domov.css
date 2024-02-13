@@ -123,7 +123,7 @@ text-decoration: none;
     background-color: #34495e;
 
     padding: 0.5vw 1vw; /* Adjust padding */
-      font-size: 11vw; /* Adjust font size */
+    font-size: 0.8vw; /* Adjust font size */
     opacity: 0;
     &:hover{
       background-color: #516579;
@@ -280,7 +280,7 @@ text-decoration: none;
   }
   /* /SEKCIA UVOD */
 
-
+/* 
   @media screen and (min-width:1px) and (max-width:780px){
 
     .grid-fotka-sekcia img {
@@ -313,11 +313,11 @@ h3{
 .dropdown-menu-tlacidla{
   li{
    padding: 1.1vw 1vw;
-   font-size: 11vw;}}
+   font-size: 1.1vw;}}
 
 
 .dropdown-podtlacidlo{
   padding: 1.1vw 1vw;
    font-size: 1vw;
 }}
-  
+   */
