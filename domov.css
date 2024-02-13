@@ -110,9 +110,9 @@ text-decoration: none;
    
 
  .dropdown-menu-tlacidla{
-   /* position: absolute; */
-   /* top: 100%; */
-   /* left: 0; */
+   position: absolute;
+   top: 100%;
+   left: 0;
    width: 100%;
    perspective: 1000px;
    z-index: 1;
@@ -178,9 +178,9 @@ text-decoration: none;
       
 
   .dropdown-menu-podtlacidla{
-    /* position: absolute; */
-    /* top: 0%; */
-    /* left: 100%; */
+    position: absolute;
+    top: 0%;
+    left: 100%;
     width: 100%;
     perspective: 1000px;
     z-index: 1;
